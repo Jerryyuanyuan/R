@@ -1,0 +1,8 @@
+time1 <- c(1.1186,4.1341,11.4250,22.7617,38.1156)
+time2 <- c(6497.03602647632,14477.3161764752,25425.5743286510,39409.6933650222,54270.5256169550)
+N <- seq(20,100,by=20)
+opar <- par(no.readonly=T)
+par(mfrow=c(1,2))
+plot(N,time1,type='b',pch=19,lty=3,xlab='N',ylab='CPU time(s)',main='算法1在p=0.06处的运行时间')
+plot(N,time2,type='b',pch=19,lty=3,xlab='N',ylab='CPU time(s)',main='算法1在p=0.18处的运行时间')
+par(opar)
