@@ -9,7 +9,8 @@ yrange = c(0,1)
 xrange = c(0,0.2)
 #mars=c(50,10,40,20)+0.1
 par(mai=c(1,1,0.2,.2))
-plot(xrange,yrange,type="n",xlab="p",ylab="可  解  概  率",ps=16,cex.axis=1.2,cex.lab=2,font.lab=1)
+plot(xrange,yrange,xaxt="n",type="n",xlab="p",ylab="可  解  概  率",ps=16,,cex.lab=2,font.lab=1)
+axis(side=1,at=seq(0,0.2,by=0.01),cex.axis=1.1)
 linetype<-c(1:5)
 plotchar<-c(2,17,25,19,8)
 
